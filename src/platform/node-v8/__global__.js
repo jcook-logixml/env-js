@@ -1,8 +1,8 @@
 var __context__ = __this__ = global;
 
 var Envjs = Envjs || 
-	require('envjs/platform/core').Envjs;
-	require('local_settings');
+	require('envjs/platform/core').Envjs; // load from node_modules
+	require('../local_settings'); // load from this context
 
 Envjs.platform       = "Node";
 Envjs.revision       = process.version;
